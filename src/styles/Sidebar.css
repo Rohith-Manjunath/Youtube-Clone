@@ -1,0 +1,30 @@
+.sidebar{
+    width: 5rem;
+    height: 90vh;
+    position: absolute;
+    top: 4rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+}
+
+.sidebar .sidebar-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+}
+
+.sidebar-icon{
+    font-size: 1.5rem;
+}
+
+.sidebar-icon-info{
+    font-size: 0.6rem;
+}
