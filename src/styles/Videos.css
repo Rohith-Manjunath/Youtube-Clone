@@ -1,0 +1,86 @@
+.videos-container{
+    width: 93%;
+    height: auto;
+    overflow:auto;
+    margin-left: 6rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 0.5rem;
+    padding: 1rem;
+    row-gap: 4rem;
+    overflow-x: hidden;
+}
+
+.videos-container .video-item{
+    width: 21rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.videos-container .video-item .img-container{
+    width: 100%;
+    height:65%;
+}
+
+.videos-container .video-item .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.video-info-div {
+    height: 35%;
+    width: 100%;
+    display: flex;
+}
+
+
+.video-info-div .channel-img{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.video-info-div .channel-img img{
+    width: 35px;
+    border-radius: 50%;
+    margin: 0.5rem 0 0 0.5rem;
+
+}
+
+.video-info-div .video-info{
+    width: 80%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.video-description{
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.2;
+    line-height: 20px;
+}
+
+.owner{
+    font-size: 0.8rem;
+    color: #828084;
+    font-weight: bold;
+
+
+}
+
+.views{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #828084;
+}
