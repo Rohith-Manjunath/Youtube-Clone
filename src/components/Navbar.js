@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Navbar.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiFillYoutube } from "react-icons/ai";
@@ -6,8 +6,11 @@ import { BsSearch } from "react-icons/bs";
 import { BiVideoPlus } from "react-icons/bi";
 import { BiBell } from "react-icons/bi";
 import { BsFillMicFill } from "react-icons/bs";
+import Search from "./Search";
 
 const Navbar = () => {
+  const [isFocused, setIsFocused] = useState(false);
+
   return (
     <div className="navbar">
       <div className="nav-left nav-divs">
@@ -19,11 +22,29 @@ const Navbar = () => {
       </div>
       <div className="nav-mid  nav-divs">
         <form action="">
-          <input type="text" placeholder="Search"></input>
+          <input
+            type="text"
+            placeholder="Search"
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+          ></input>
           <div className="search-icon-div">
             <BsSearch className="search-icon" />
             <span className="search-span">Search</span>
           </div>
+          {isFocused && (
+            <div className="search-history">
+              <Search data="Kalaastar" />
+              <Search data="Yo Yo Honey Singh" />
+              <Search data="Mern Stack" />
+              <Search data="How to cook chicken biryani" />
+              <Search data="Thapa Technical" />
+              <Search data="Treat you better" />
+              <Search data="Shawn Mendes" />
+              <Search data="Charlie Puth" />
+              <Search data="We dont talk anymore song" />
+            </div>
+          )}
         </form>
         <BsFillMicFill className="mic-icon" />
         <span className="mic-span">Search with your voice</span>

@@ -17,6 +17,7 @@
     height: 18rem;
     border-radius: 0.5rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .videos-container .video-item .img-container{
