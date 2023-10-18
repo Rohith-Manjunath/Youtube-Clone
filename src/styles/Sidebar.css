@@ -6,7 +6,7 @@
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     position: fixed;
     top: 4rem;
     left: 0;
@@ -18,7 +18,14 @@
     justify-content: center;
     flex-direction: column;
     gap: 0.3rem;
+    padding: 0.5rem 0;
     
+}
+
+.sidebar .sidebar-icons:hover{
+    background-color: rgb(242, 239, 239);
+    cursor: pointer;
+
 }
 
 .sidebar-icon{
