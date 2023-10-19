@@ -7,8 +7,11 @@ font-family: sans-serif;
 
 }
 
-body{
+body,html{
+  width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 .App{
