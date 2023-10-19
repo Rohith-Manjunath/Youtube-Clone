@@ -10,6 +10,7 @@
     position: fixed;
     top: 4rem;
     left: 0;
+    background-color: white;
 }
 
 .sidebar .sidebar-icons{
@@ -34,4 +35,13 @@
 
 .sidebar-icon-info{
     font-size: 0.6rem;
+}
+
+@media (320px <=width <=480px) {
+    
+    
+    .sidebar{
+        display: none;
+    }
+
 }

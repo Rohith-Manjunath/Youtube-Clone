@@ -273,3 +273,46 @@ gap: 1rem;
     margin-left: auto;
     cursor: pointer;
   }
+
+  @media (max-width: 480px) {
+
+    .navbar{
+        padding: 0 1rem ;
+    }
+
+  .notification-div{
+    display: none;
+
+    justify-content: space-evenly;
+  }
+
+form{
+    width: 20%;
+    justify-content: center;
+}
+
+.nav-mid{
+    justify-content: flex-end;
+}
+
+.search-icon-div{
+    width: 2rem;
+    height: 100%;
+}
+  
+  form input{
+display: none;
+  }
+
+  
+.search-icon-div:focus form{
+width: 5rem;
+}
+
+
+.nav-right .account-image{
+    width: 5rem;
+    aspect-ratio: 1;
+}
+
+  }
